@@ -1,0 +1,19 @@
+{
+  "name": "Gulp-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://githib.com/kva1ery/Gulp-template.git"
+  },
+  "keywords": [],
+  "author": "Valeriy Kokorev",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
