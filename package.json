@@ -14,6 +14,9 @@
   "author": "Valeriy Kokorev",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^4.0.2"
   }
 }
