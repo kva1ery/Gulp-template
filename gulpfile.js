@@ -17,6 +17,12 @@ $.path.tasks.forEach(function (taskPath) {
 
 $.gulp.task('default',
     $.gulp.series(
-        $.gulp.parallel('html', 'scss', 'scripts'), //Добавить scripts:libs когда появятся библиотеки
+        $.gulp.parallel('html', 'scss', 'scripts', 'img:dev'), //Добавить scripts:libs когда появятся библиотеки
+        $.gulp.parallel('watch', 'serve')
+    ));
+
+$.gulp.task('build',
+    $.gulp.series(
+        $.gulp.parallel('html', 'scss', 'scripts', 'img:build'), //Добавить scripts:libs когда появятся библиотеки
         $.gulp.parallel('watch', 'serve')
     ));
