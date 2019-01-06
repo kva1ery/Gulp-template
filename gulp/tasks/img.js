@@ -8,4 +8,14 @@ module.exports = function() {
             .pipe($.gp.tinypng('API_KEY'))
             .pipe($.gulp.dest('build/img'))
     });
+
+    $.gulp.task('svg', function () {
+       return $.gulp.src('./src/img/**/*.svg')
+           .pipe($.gp.svgmin({
+                js2svg: {
+                    pretty: true
+                }
+           }))
+           .pipe($.gulp.dest('./build/img'))
+    });
 };
