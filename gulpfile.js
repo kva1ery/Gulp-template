@@ -26,3 +26,7 @@ $.gulp.task('build',
         $.gulp.parallel('html', 'scss', 'scripts', 'img:build'), //Добавить scripts:libs когда появятся библиотеки
         $.gulp.parallel('watch', 'serve')
     ));
+
+$.gulp.task('clean-build',
+    $.gulp.series('clean-build')
+);
